@@ -5,7 +5,7 @@ You can install this package using [devtools](https://cran.r-project.org/web/pac
 
 ```
 devtools::install_github('jessicabeyer/cleanBDfile')
-library(cleanBDfile
+library(cleanBDfile)
 ```
 
 As an example, we can look at an example xls file containing Batch Analysis results
