@@ -42,6 +42,9 @@ cleanBDfile <- function(path){
     separate(CellSample, c("empty","Cell", "Sample"), sep=" ", fill="right") %>%
     subset(select=-empty) -> tidyFCdata
   
+  #reorder columns to make data frame more readable, dropping % of this plot and % of all
+  tidyFCdata[c(11,12,13,10,1,2,3,14,7,6,15,9,8)] -> tidyFCdata
+  
   return(tidyFCdata)
 }
 
