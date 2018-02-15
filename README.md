@@ -7,12 +7,12 @@ You can install this package using [devtools](https://cran.r-project.org/web/pac
 devtools::install_github('jessicabeyer/cleanBDfile')
 ```
 
-As an example, we can load an example xls file containing the Batch Analysis results
+As an example, we can look at an example xls file containing Batch Analysis results
 
 ```
 batchAnalysisResults <- dir(system.file("exampleFC.xls"))
 ```
-This format would be very difficult to work with in R:
+The format of this xls file would be very difficult to work with in R:
 
 |                                  |          |             |                |             |                |              |             |             |              |              | 
 |----------------------------------|----------|-------------|----------------|-------------|----------------|--------------|-------------|-------------|--------------|--------------| 
