@@ -11,6 +11,7 @@ cleanBDfile <- function(path){
   require(readxl)
   require(purrr)
   require(tidyverse)
+  require(janitor)
 
   # first, count up the rows in the excel file to figure out how many chunks of data there are
   # each chunk takes up five rows, except for the last one which takes up four
@@ -45,6 +46,6 @@ cleanBDfile <- function(path){
   #reorder columns to make data frame more readable, dropping % of this plot and % of all
   tidyFCdata[c(11,12,13,10,1,2,3,14,7,6,15,9,8)] -> tidyFCdata
   
-  return(tidyFCdata)
+  return(clean_names(tidyFCdata))
 }
 
