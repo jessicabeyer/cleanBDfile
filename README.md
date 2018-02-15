@@ -10,7 +10,7 @@ devtools::install_github('jessicabeyer/cleanBDfile')
 As an example, we can look at an example xls file containing Batch Analysis results
 
 ```
-batchAnalysisResults <- dir(system.file("exampleFC.xls"))
+batchAnalysisResults <- system.file("extdata","exampleFC.xls", package="cleanBDfile")
 ```
 The format of this xls file would be very difficult to work with in R:
 
