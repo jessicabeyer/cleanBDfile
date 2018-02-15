@@ -1,5 +1,5 @@
 # cleanBDfile
-This package contains a single function, `cleanBDfile`, that reorganizes an output file from the BD Accuri C6 Plus flow cytometer software.
+This package contains a single function, `cleanBDfile`, that reorganizes an output file from the BD Accuri C6 Plus flow cytometer software. Specifically, this function takes an xls file generated from the Batch Analysis tab and organizes for analysis in R.
 
 You can install this package using [devtools](https://cran.r-project.org/web/packages/devtools/index.html).
 
