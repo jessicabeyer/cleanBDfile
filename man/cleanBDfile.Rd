@@ -16,6 +16,6 @@ Returns a data frame with columns describing sample information and data
 This function reorganizes an output file from BD Accuri C6 Plus software.
 }
 \examples{
-batchAnalysisResults <- dir(system.file("exampleFC.xls"))
+batchAnalysisResults <- system.file("extdata","exampleFC.xls", package="cleanBDfile")
 cleanBDfile(batchAnalysisResults)
 }
